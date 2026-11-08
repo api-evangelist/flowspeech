@@ -1,0 +1,30 @@
+aid: flowspeech
+name: FlowSpeech
+description: 'FlowSpeech is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://artifacts.apis.io/flowspeech/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-11-08'
+modified: '2026-11-08'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://flowspeech.io/
+- type: Documentation
+  url: https://flowspeech.io/docs/public-api
+x-submission-notes: 'I represent FlowSpeech and am submitting its text-to-speech API for your catalog.
+  It is a server-side REST API with Bearer API-key authentication. Generation is asynchronous: POST /api/v1/tts/jobs
+  creates a job, and GET /api/v1/tts/jobs/{id} returns its status and, on success, an audio download URL.'
+x-submission-probe: 2026-11-07 200 https://flowspeech.io/ ctl=404
+x-submitted-by: waeckerlinfederowicz66@gmail.com (submission, 2026-11-07)
